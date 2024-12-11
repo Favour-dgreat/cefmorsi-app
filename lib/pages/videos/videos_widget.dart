@@ -6,10 +6,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'videos_model.dart';
 export 'videos_model.dart';
 
@@ -64,13 +62,13 @@ class _VideosWidgetState extends State<VideosWidget> {
                             ClipRRect(
                               child: Container(
                                 width: double.infinity,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFFF1F4F8),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 16.0),
                               child: Wrap(
                                 spacing: 8.0,
@@ -83,7 +81,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                 clipBehavior: Clip.antiAlias,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: SingleChildScrollView(
                                       primary: false,
@@ -96,7 +94,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -132,7 +130,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                                             backgroundColor:
                                                                 Colors
                                                                     .transparent,
-                                                            alignment: AlignmentDirectional(
+                                                            alignment: const AlignmentDirectional(
                                                                     0.0, 0.0)
                                                                 .resolve(
                                                                     Directionality.of(
@@ -144,7 +142,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                                                           dialogContext)
                                                                       .unfocus(),
                                                               child:
-                                                                  ProfileInfoWidget(),
+                                                                  const ProfileInfoWidget(),
                                                             ),
                                                           );
                                                         },
@@ -170,7 +168,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(2.0),
+                                                        const EdgeInsets.all(2.0),
                                                     child: AuthUserStreamWidget(
                                                       builder: (context) =>
                                                           InkWell(
@@ -193,18 +191,18 @@ class _VideosWidgetState extends State<VideosWidget> {
                                                           clipBehavior:
                                                               Clip.antiAlias,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             shape:
                                                                 BoxShape.circle,
                                                           ),
                                                           child:
                                                               CachedNetworkImage(
                                                             fadeInDuration:
-                                                                Duration(
+                                                                const Duration(
                                                                     milliseconds:
                                                                         500),
                                                             fadeOutDuration:
-                                                                Duration(
+                                                                const Duration(
                                                                     milliseconds:
                                                                         500),
                                                             imageUrl:
@@ -237,7 +235,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -246,11 +244,11 @@ class _VideosWidgetState extends State<VideosWidget> {
                         options: FFButtonOptions(
                           width: 139.0,
                           height: 42.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFD4E9E8),
+                          color: const Color(0xFFD4E9E8),
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
@@ -268,10 +266,10 @@ class _VideosWidgetState extends State<VideosWidget> {
                         ),
                       ),
                     ),
-                  ].addToStart(SizedBox(width: 30.0)),
+                  ].addToStart(const SizedBox(width: 30.0)),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 6.0,
@@ -289,7 +287,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                             'assets/images/WhatsApp_Image_2024-09-04_at_11.57.14_ef28e5c1.jpg',
                           ).image,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x8CFCE00C),
@@ -303,7 +301,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                         shape: BoxShape.rectangle,
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(2.0),
                         child: ClipRRect(
                           child: Container(
                             constraints: BoxConstraints(
@@ -311,12 +309,12 @@ class _VideosWidgetState extends State<VideosWidget> {
                               maxHeight:
                                   MediaQuery.sizeOf(context).height * 0.2,
                             ),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0x1E101213),
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.end,
@@ -332,7 +330,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Message Title',
@@ -361,7 +359,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Hello World',
@@ -416,7 +414,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 6.0,
@@ -434,7 +432,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                             'assets/images/WhatsApp_Image_2024-09-04_at_11.57.14_ef28e5c1.jpg',
                           ).image,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x8CFCE00C),
@@ -448,7 +446,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                         shape: BoxShape.rectangle,
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(2.0),
                         child: ClipRRect(
                           child: Container(
                             constraints: BoxConstraints(
@@ -456,12 +454,12 @@ class _VideosWidgetState extends State<VideosWidget> {
                               maxHeight:
                                   MediaQuery.sizeOf(context).height * 0.2,
                             ),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0x1E101213),
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.end,
@@ -477,7 +475,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Message Title',
@@ -506,7 +504,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Hello World',
@@ -561,7 +559,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 6.0,
@@ -579,7 +577,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                             'assets/images/WhatsApp_Image_2024-09-04_at_11.57.14_ef28e5c1.jpg',
                           ).image,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x8CFCE00C),
@@ -593,7 +591,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                         shape: BoxShape.rectangle,
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(2.0),
                         child: ClipRRect(
                           child: Container(
                             constraints: BoxConstraints(
@@ -601,12 +599,12 @@ class _VideosWidgetState extends State<VideosWidget> {
                               maxHeight:
                                   MediaQuery.sizeOf(context).height * 0.2,
                             ),
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0x1E101213),
                               shape: BoxShape.rectangle,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(8.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.end,
@@ -622,7 +620,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Message Title',
@@ -651,7 +649,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Hello World',
@@ -707,11 +705,11 @@ class _VideosWidgetState extends State<VideosWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                      const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 4.0,
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(15.0),
                         bottomRight: Radius.circular(15.0),
@@ -720,7 +718,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                       ),
                     ),
                     child: ClipRRect(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(15.0),
                         bottomRight: Radius.circular(15.0),
                         topLeft: Radius.circular(15.0),
@@ -733,13 +731,13 @@ class _VideosWidgetState extends State<VideosWidget> {
                               blurRadius: 4.0,
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              offset: Offset(
+                              offset: const Offset(
                                 0.0,
                                 2.0,
                               ),
                             )
                           ],
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(15.0),
                             bottomRight: Radius.circular(15.0),
                             topLeft: Radius.circular(15.0),
@@ -789,7 +787,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                     context.pushNamed(
                                       'Events',
                                       extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
+                                        kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
                                               PageTransitionType.bottomToTop,
@@ -812,7 +810,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                     context.pushNamed(
                                       'Books',
                                       extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
+                                        kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
                                               PageTransitionType.bottomToTop,
@@ -835,7 +833,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                     context.pushNamed(
                                       'more',
                                       extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
+                                        kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
                                               PageTransitionType.fade,
@@ -848,7 +846,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 10.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -873,7 +871,7 @@ class _VideosWidgetState extends State<VideosWidget> {
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Events',

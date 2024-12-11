@@ -1,12 +1,9 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'video_details_model.dart';
 export 'video_details_model.dart';
 
@@ -41,7 +38,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFFCFCFC),
+        backgroundColor: const Color(0xFFFCFCFC),
         body: SafeArea(
           top: true,
           child: Column(
@@ -53,13 +50,13 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                   children: [
                     Card(
                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                      color: Color(0xFFFCFCFC),
+                      color: const Color(0xFFFCFCFC),
                       elevation: 4.0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(2.0),
                       ),
                       child: Container(
-                        constraints: BoxConstraints(
+                        constraints: const BoxConstraints(
                           maxHeight: 250.0,
                         ),
                         decoration: BoxDecoration(
@@ -69,7 +66,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                               'assets/images/WhatsApp_Image_2024-09-04_at_11.57.14_ef28e5c1.jpg',
                             ).image,
                           ),
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
@@ -82,7 +79,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 20.0, 20.0, 30.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -113,13 +110,13 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 15.0, 0.0, 0.0),
                             child: Text(
                               'Video Title',
@@ -139,7 +136,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 5.0, 0.0, 20.0),
                             child: Text(
                               'By',
@@ -170,7 +167,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                 ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: Text(
                               'Episodes',
@@ -193,7 +190,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           10.0, 10.0, 10.0, 10.0),
                       child: Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -203,14 +200,14 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 0.0, 10.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 5.0),
                                 child: Text(
                                   'Hello World',
@@ -243,7 +240,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -266,7 +263,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                       },
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Play Now',
@@ -297,7 +294,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           10.0, 10.0, 10.0, 10.0),
                       child: Card(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -307,14 +304,14 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 0.0, 10.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 5.0),
                                 child: Text(
                                   'Hello World',
@@ -347,7 +344,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -370,7 +367,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                       },
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Play Now',
@@ -404,11 +401,11 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 4.0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
@@ -417,7 +414,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                     ),
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -430,13 +427,13 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                             blurRadius: 4.0,
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               2.0,
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(15.0),
                           bottomRight: Radius.circular(15.0),
                           topLeft: Radius.circular(15.0),
@@ -484,7 +481,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                   context.pushNamed(
                                     'Events',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -507,7 +504,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                   context.pushNamed(
                                     'Books',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -530,7 +527,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                   context.pushNamed(
                                     'more',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -542,7 +539,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -565,7 +562,7 @@ class _VideoDetailsWidgetState extends State<VideoDetailsWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Events',

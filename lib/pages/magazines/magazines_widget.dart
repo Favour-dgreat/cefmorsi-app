@@ -5,10 +5,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'magazines_model.dart';
 export 'magazines_model.dart';
 
@@ -66,13 +64,13 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                 ClipRRect(
                                   child: Container(
                                     width: double.infinity,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFF1F4F8),
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -80,7 +78,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -109,7 +107,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(2.0, 0.0, 0.0, 0.0),
                                               child: AuthUserStreamWidget(
                                                 builder: (context) => Text(
@@ -150,7 +148,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(2.0),
+                                          padding: const EdgeInsets.all(2.0),
                                           child: AuthUserStreamWidget(
                                             builder: (context) => InkWell(
                                               splashColor: Colors.transparent,
@@ -166,13 +164,13 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                 width: 40.0,
                                                 height: 40.0,
                                                 clipBehavior: Clip.antiAlias,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl: currentUserPhoto,
                                                   fit: BoxFit.cover,
@@ -185,7 +183,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                     ],
                                   ),
                                 ),
-                              ].addToStart(SizedBox(height: 20.0)),
+                              ].addToStart(const SizedBox(height: 20.0)),
                             ),
                           ),
                         ],
@@ -196,7 +194,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 10.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () {
@@ -206,11 +204,11 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                             options: FFButtonOptions(
                               width: 142.0,
                               height: 42.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: Color(0xFFD4E9E8),
+                              color: const Color(0xFFD4E9E8),
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
@@ -229,11 +227,11 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                             ),
                           ),
                         ),
-                      ].addToStart(SizedBox(width: 30.0)),
+                      ].addToStart(const SizedBox(width: 30.0)),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 30.0, 8.0, 10.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 4.0,
@@ -246,7 +244,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x8CFCE00C),
@@ -260,18 +258,18 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                             shape: BoxShape.rectangle,
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(4.0),
+                            padding: const EdgeInsets.all(4.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 10.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -285,7 +283,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -318,7 +316,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'By Chukie Morsi',
@@ -328,7 +326,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                     .override(
                                                       fontFamily:
                                                           'Plus Jakarta Sans',
-                                                      color: Color(0xFF57636C),
+                                                      color: const Color(0xFF57636C),
                                                       fontSize: 12.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -341,7 +339,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -351,11 +349,11 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                 text: 'Read More',
                                                 options: FFButtonOptions(
                                                   height: 42.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -400,7 +398,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 10.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 4.0,
@@ -413,7 +411,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x8CFCE00C),
@@ -427,18 +425,18 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                             shape: BoxShape.rectangle,
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(4.0),
+                            padding: const EdgeInsets.all(4.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 10.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -452,7 +450,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -485,7 +483,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'By Chukie Morsi',
@@ -495,7 +493,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                     .override(
                                                       fontFamily:
                                                           'Plus Jakarta Sans',
-                                                      color: Color(0xFF57636C),
+                                                      color: const Color(0xFF57636C),
                                                       fontSize: 12.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -508,7 +506,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -518,11 +516,11 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                 text: 'Read More',
                                                 options: FFButtonOptions(
                                                   height: 42.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -567,7 +565,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 10.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 4.0,
@@ -580,7 +578,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x8CFCE00C),
@@ -594,18 +592,18 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                             shape: BoxShape.rectangle,
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(4.0),
+                            padding: const EdgeInsets.all(4.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 10.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -619,7 +617,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -652,7 +650,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'By Chukie Morsi',
@@ -662,7 +660,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                     .override(
                                                       fontFamily:
                                                           'Plus Jakarta Sans',
-                                                      color: Color(0xFF57636C),
+                                                      color: const Color(0xFF57636C),
                                                       fontSize: 12.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -675,7 +673,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -685,11 +683,11 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                                 text: 'Read More',
                                                 options: FFButtonOptions(
                                                   height: 42.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -734,11 +732,11 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
                       child: Material(
                         color: Colors.transparent,
                         elevation: 4.0,
-                        shape: RoundedRectangleBorder(
+                        shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(15.0),
                             bottomRight: Radius.circular(15.0),
@@ -747,7 +745,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                           ),
                         ),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(15.0),
                             bottomRight: Radius.circular(15.0),
                             topLeft: Radius.circular(15.0),
@@ -760,13 +758,13 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                   blurRadius: 4.0,
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  offset: Offset(
+                                  offset: const Offset(
                                     0.0,
                                     2.0,
                                   ),
                                 )
                               ],
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(15.0),
                                 bottomRight: Radius.circular(15.0),
                                 topLeft: Radius.circular(15.0),
@@ -819,7 +817,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         context.pushNamed(
                                           'Events',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType: PageTransitionType
                                                   .bottomToTop,
@@ -843,7 +841,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         context.pushNamed(
                                           'Books',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType: PageTransitionType
                                                   .bottomToTop,
@@ -867,7 +865,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                         context.pushNamed(
                                           'more',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -881,7 +879,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                   ],
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 10.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -909,7 +907,7 @@ class _MagazinesWidgetState extends State<MagazinesWidget> {
                                             ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Events',

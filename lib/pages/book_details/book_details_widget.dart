@@ -1,13 +1,10 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'book_details_model.dart';
 export 'book_details_model.dart';
 
@@ -42,29 +39,29 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFFCFCFC),
+        backgroundColor: const Color(0xFFFCFCFC),
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             Card(
               clipBehavior: Clip.antiAliasWithSaveLayer,
-              color: Color(0xFFFCFCFC),
+              color: const Color(0xFFFCFCFC),
               elevation: 2.0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(2.0),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                 child: SafeArea(
                   child: ClipRRect(
                     child: Container(
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 20.0, 30.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -121,13 +118,13 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                                         print('IconButton pressed ...');
                                       },
                                     ),
-                                  ].divide(SizedBox(width: 20.0)),
+                                  ].divide(const SizedBox(width: 20.0)),
                                 ),
                               ],
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 10.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -210,12 +207,12 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                                     ),
                                   ],
                                 ),
-                              ].divide(SizedBox(width: 10.0)),
+                              ].divide(const SizedBox(width: 10.0)),
                             ),
                           ),
                         ]
-                            .addToStart(SizedBox(height: 20.0))
-                            .addToEnd(SizedBox(height: 20.0)),
+                            .addToStart(const SizedBox(height: 20.0))
+                            .addToEnd(const SizedBox(height: 20.0)),
                       ),
                     ),
                   ),
@@ -223,14 +220,14 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 30.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 30.0),
                     child: Text(
                       'Summary',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -249,7 +246,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color: Color(0xFF1E1E1E),
+                          color: const Color(0xFF1E1E1E),
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
                           useGoogleFonts: GoogleFonts.asMap().containsKey(
@@ -260,11 +257,11 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
               child: Material(
                 color: Colors.transparent,
                 elevation: 4.0,
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(15.0),
                     bottomRight: Radius.circular(15.0),
@@ -273,7 +270,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                   ),
                 ),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(15.0),
                     bottomRight: Radius.circular(15.0),
                     topLeft: Radius.circular(15.0),
@@ -286,13 +283,13 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                           blurRadius: 4.0,
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          offset: Offset(
+                          offset: const Offset(
                             0.0,
                             2.0,
                           ),
                         )
                       ],
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(15.0),
                         bottomRight: Radius.circular(15.0),
                         topLeft: Radius.circular(15.0),
@@ -340,7 +337,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                                 context.pushNamed(
                                   'Events',
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: TransitionInfo(
+                                    kTransitionInfoKey: const TransitionInfo(
                                       hasTransition: true,
                                       transitionType:
                                           PageTransitionType.bottomToTop,
@@ -363,7 +360,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                                 context.pushNamed(
                                   'Books',
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: TransitionInfo(
+                                    kTransitionInfoKey: const TransitionInfo(
                                       hasTransition: true,
                                       transitionType:
                                           PageTransitionType.bottomToTop,
@@ -386,7 +383,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                                 context.pushNamed(
                                   'more',
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: TransitionInfo(
+                                    kTransitionInfoKey: const TransitionInfo(
                                       hasTransition: true,
                                       transitionType: PageTransitionType.fade,
                                       duration: Duration(milliseconds: 0),
@@ -398,7 +395,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 10.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -421,7 +418,7 @@ class _BookDetailsWidgetState extends State<BookDetailsWidget> {
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'Events',

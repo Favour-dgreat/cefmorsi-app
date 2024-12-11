@@ -7,10 +7,8 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'events_model.dart';
 export 'events_model.dart';
 
@@ -60,13 +58,13 @@ class _EventsWidgetState extends State<EventsWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -87,7 +85,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       2.0, 0.0, 0.0, 0.0),
                                   child: AuthUserStreamWidget(
                                     builder: (context) => Text(
@@ -122,7 +120,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: AuthUserStreamWidget(
                                 builder: (context) => InkWell(
                                   splashColor: Colors.transparent,
@@ -136,14 +134,14 @@ class _EventsWidgetState extends State<EventsWidget> {
                                     width: 40.0,
                                     height: 40.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl: currentUserPhoto,
                                       fit: BoxFit.cover,
                                     ),
@@ -155,18 +153,18 @@ class _EventsWidgetState extends State<EventsWidget> {
                         ],
                       ),
                     ),
-                  ].addToStart(SizedBox(height: 20.0)),
+                  ].addToStart(const SizedBox(height: 20.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -175,11 +173,11 @@ class _EventsWidgetState extends State<EventsWidget> {
                         options: FFButtonOptions(
                           width: 218.0,
                           height: 42.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFD4E9E8),
+                          color: const Color(0xFFD4E9E8),
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
@@ -197,15 +195,15 @@ class _EventsWidgetState extends State<EventsWidget> {
                         ),
                       ),
                     ),
-                  ].addToStart(SizedBox(width: 30.0)),
+                  ].addToStart(const SizedBox(width: 30.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 4.0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(10.0),
                       bottomRight: Radius.circular(10.0),
@@ -218,7 +216,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                     height: 54.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(10.0),
                         bottomRight: Radius.circular(10.0),
                         topLeft: Radius.circular(10.0),
@@ -228,7 +226,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                     child: FlutterFlowDropDown<String>(
                       controller: _model.dropDownValueController ??=
                           FormFieldController<String>(null),
-                      options: ['Zoom Teaching ', 'Option 2', 'Option 3'],
+                      options: const ['Zoom Teaching ', 'Option 2', 'Option 3'],
                       onChanged: (val) =>
                           safeSetState(() => _model.dropDownValue = val),
                       width: 300.0,
@@ -257,7 +255,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                       borderWidth: 0.0,
                       borderRadius: 8.0,
                       margin:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       hidesUnderline: true,
                       isOverButton: false,
                       isSearchable: false,
@@ -267,7 +265,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -276,12 +274,12 @@ class _EventsWidgetState extends State<EventsWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 10.0,
                                 color: Color(0x66D2BA33),
@@ -295,7 +293,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -305,7 +303,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -320,13 +318,13 @@ class _EventsWidgetState extends State<EventsWidget> {
                                           blurRadius: 4.0,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -336,7 +334,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 12.0, 0.0, 12.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20.0),
@@ -349,7 +347,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Zoom Teaching November Series ',
@@ -370,7 +368,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Lorem ipsum dolor sit amet, consectetur adipiscing \nelit. Arcu lectus eleifend velit aliquam maecenas \nullamcorper. Platea sem pharetra, ligula vulputate \netiam nibh odio. ',
@@ -390,14 +388,14 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 5.0, 8.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 0.0, 0.0),
                                         child: Icon(
                                           Icons.calendar_month,
@@ -432,7 +430,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 0.0, 0.0),
                                             child: Icon(
                                               Icons.punch_clock,
@@ -462,17 +460,17 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                               .bodySmallFamily),
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 5.0)),
+                                    ].divide(const SizedBox(width: 5.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 10.0, 8.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 0.0, 0.0),
                                         child: Icon(
                                           Icons.location_pin,
@@ -509,12 +507,12 @@ class _EventsWidgetState extends State<EventsWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 10.0,
                                 color: Color(0x66D2BA33),
@@ -528,7 +526,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -536,7 +534,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 12.0, 0.0, 12.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(20.0),
@@ -549,7 +547,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Zoom Teaching November Series ',
@@ -570,7 +568,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Lorem ipsum dolor sit amet, consectetur adipiscing \nelit. Arcu lectus eleifend velit aliquam maecenas \nullamcorper. Platea sem pharetra, ligula vulputate \netiam nibh odio. ',
@@ -590,14 +588,14 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 5.0, 8.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 0.0, 0.0),
                                         child: Icon(
                                           Icons.calendar_month,
@@ -632,7 +630,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 0.0, 0.0),
                                             child: Icon(
                                               Icons.punch_clock,
@@ -662,17 +660,17 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                               .bodySmallFamily),
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 5.0)),
+                                    ].divide(const SizedBox(width: 5.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 10.0, 8.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 0.0, 0.0),
                                         child: Icon(
                                           Icons.location_pin,
@@ -712,7 +710,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
                     bottomRight: Radius.circular(10.0),
@@ -722,11 +720,11 @@ class _EventsWidgetState extends State<EventsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 4.0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
@@ -735,7 +733,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                     ),
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -748,13 +746,13 @@ class _EventsWidgetState extends State<EventsWidget> {
                             blurRadius: 4.0,
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               2.0,
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(15.0),
                           bottomRight: Radius.circular(15.0),
                           topLeft: Radius.circular(15.0),
@@ -802,7 +800,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   context.pushNamed(
                                     'Events',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -825,7 +823,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   context.pushNamed(
                                     'Books',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -848,7 +846,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                   context.pushNamed(
                                     'more',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -860,7 +858,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -883,7 +881,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Events',

@@ -5,9 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'o_t_p_copy_model.dart';
 export 'o_t_p_copy_model.dart';
 
@@ -74,7 +72,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
               context.safePop();
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -86,7 +84,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                 child: Icon(
                   Icons.lock,
                   color: FlutterFlowTheme.of(context).primary,
@@ -94,7 +92,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                 child: Text(
                   'Reset  Password',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -108,10 +106,10 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
               ),
               Flexible(
                 child: Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                     child: Text(
                       'Please input the 4-digit recovery code\nsent to your email addressor phone\nnumber to proceed with resetting your password.',
                       textAlign: TextAlign.center,
@@ -132,7 +130,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(20.0),
                       child: TextFormField(
                         controller: _model.textController1,
                         focusNode: _model.textFieldFocusNode1,
@@ -214,7 +212,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(20.0),
                       child: TextFormField(
                         controller: _model.textController2,
                         focusNode: _model.textFieldFocusNode2,
@@ -305,7 +303,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(20.0),
                       child: TextFormField(
                         controller: _model.textController3,
                         focusNode: _model.textFieldFocusNode3,
@@ -395,7 +393,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(20.0),
                       child: TextFormField(
                         controller: _model.textController4,
                         focusNode: _model.textFieldFocusNode4,
@@ -507,7 +505,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                       milliSecond: false,
                     ),
                     controller: _model.timerController,
-                    updateStateInterval: Duration(milliseconds: 1000),
+                    updateStateInterval: const Duration(milliseconds: 1000),
                     onChanged: (value, displayTime, shouldUpdate) {
                       _model.timerMilliseconds = value;
                       _model.timerValue = displayTime;
@@ -517,7 +515,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).bodyMediumFamily,
-                          color: Color(0xFFFA172C),
+                          color: const Color(0xFFFA172C),
                           letterSpacing: 0.0,
                           useGoogleFonts: GoogleFonts.asMap().containsKey(
                               FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -526,10 +524,10 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button-Login pressed ...');
@@ -539,9 +537,9 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                       width: 300.0,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle: FlutterFlowTheme.of(context)
                           .titleSmall
@@ -554,7 +552,7 @@ class _OTPCopyWidgetState extends State<OTPCopyWidget> {
                                 FlutterFlowTheme.of(context).titleSmallFamily),
                           ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),

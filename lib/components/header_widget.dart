@@ -5,9 +5,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'header_model.dart';
 export 'header_model.dart';
 
@@ -57,12 +55,12 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             children: [
               Container(
                 width: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFFF1F4F8),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Wrap(
                   spacing: 8.0,
                   runSpacing: 4.0,
@@ -80,7 +78,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 36.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -105,15 +103,15 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                   width: 44.0,
                                   height: 44.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0x4C4B39EF),
+                                    color: const Color(0x4C4B39EF),
                                     shape: BoxShape.circle,
                                     border: Border.all(
-                                      color: Color(0xFF4B39EF),
+                                      color: const Color(0xFF4B39EF),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -126,7 +124,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                         width: 40.0,
                                         height: 40.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.network(
@@ -141,7 +139,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -153,7 +151,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: Color(0xFF14181B),
+                                        color: const Color(0xFF14181B),
                                         fontSize: 36.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.normal,
@@ -162,7 +160,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       2.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Favour',
@@ -170,7 +168,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Color(0xFF4B39EF),
+                                          color: const Color(0xFF4B39EF),
                                           fontSize: 36.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
@@ -183,19 +181,19 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Expanded(
-                                  child: Container(
+                                  child: SizedBox(
                                     width: double.infinity,
                                     height: 248.0,
                                     child: Stack(
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 20.0),
                                           child: PageView(
                                             controller: _model
@@ -204,13 +202,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                             scrollDirection: Axis.horizontal,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsets.all(8.0),
+                                                padding: const EdgeInsets.all(8.0),
                                                 child: Container(
                                                   width: 100.0,
                                                   height: 543.0,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 5.0,
                                                         color:
@@ -228,7 +226,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.min,
@@ -236,7 +234,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                         Expanded(
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         12.0,
@@ -250,7 +248,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                   BoxDecoration(
                                                                 color: Colors
                                                                     .white,
-                                                                boxShadow: [
+                                                                boxShadow: const [
                                                                   BoxShadow(
                                                                     blurRadius:
                                                                         5.0,
@@ -272,7 +270,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             8.0),
                                                                 child: Row(
@@ -283,7 +281,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12.0,
                                                                             0.0,
                                                                             0.0,
@@ -295,7 +293,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                               .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Plus Jakarta Sans',
-                                                                                color: Color(0xFF14181B),
+                                                                                color: const Color(0xFF14181B),
                                                                                 fontSize: 14.0,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w500,
@@ -304,7 +302,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                         ),
                                                                       ),
                                                                     ),
-                                                                    Icon(
+                                                                    const Icon(
                                                                       Icons
                                                                           .arrow_forward_ios,
                                                                       color: Color(
@@ -332,7 +330,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -368,7 +366,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             4.0,
@@ -382,7 +380,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFF57636C),
                                                                         fontSize:
                                                                             12.0,
@@ -404,13 +402,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.all(8.0),
+                                                padding: const EdgeInsets.all(8.0),
                                                 child: Container(
                                                   width: 100.0,
                                                   height: 100.0,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 5.0,
                                                         color:
@@ -427,7 +425,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -446,7 +444,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -486,7 +484,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             4.0,
@@ -500,7 +498,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFF57636C),
                                                                         fontSize:
                                                                             12.0,
@@ -522,13 +520,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.all(8.0),
+                                                padding: const EdgeInsets.all(8.0),
                                                 child: Container(
                                                   width: 100.0,
                                                   height: 100.0,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
-                                                    boxShadow: [
+                                                    boxShadow: const [
                                                       BoxShadow(
                                                         blurRadius: 5.0,
                                                         color:
@@ -545,7 +543,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -564,7 +562,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -594,7 +592,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF14181B),
                                                                       fontSize:
                                                                           12.0,
@@ -611,7 +609,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             4.0,
@@ -625,7 +623,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFF57636C),
                                                                         fontSize:
                                                                             12.0,
@@ -651,10 +649,10 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 1.0),
+                                              const AlignmentDirectional(0.0, 1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 10.0),
                                             child: smooth_page_indicator
                                                 .SmoothPageIndicator(
@@ -668,13 +666,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                 await _model.slider1Controller!
                                                     .animateToPage(
                                                   i,
-                                                  duration: Duration(
+                                                  duration: const Duration(
                                                       milliseconds: 500),
                                                   curve: Curves.ease,
                                                 );
                                                 safeSetState(() {});
                                               },
-                                              effect: smooth_page_indicator
+                                              effect: const smooth_page_indicator
                                                   .ExpandingDotsEffect(
                                                 expansionFactor: 2.0,
                                                 spacing: 8.0,
@@ -700,7 +698,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.45,
                         decoration: BoxDecoration(
@@ -708,7 +706,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               4.0, 4.0, 4.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -716,7 +714,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10.0),
@@ -729,12 +727,12 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 8.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Padding(
+                                    const Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 12.0, 0.0),
                                       child: Icon(
@@ -749,7 +747,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                           .labelSmall
                                           .override(
                                             fontFamily: 'Plus Jakarta Sans',
-                                            color: Color(0xFF57636C),
+                                            color: const Color(0xFF57636C),
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -762,7 +760,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'The Running Ragamuffins',
@@ -770,7 +768,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                       .bodyLarge
                                       .override(
                                         fontFamily: 'Plus Jakarta Sans',
-                                        color: Color(0xFF14181B),
+                                        color: const Color(0xFF14181B),
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -780,7 +778,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   '216 Members',
@@ -788,7 +786,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                       .labelSmall
                                       .override(
                                         fontFamily: 'Plus Jakarta Sans',
-                                        color: Color(0xFF57636C),
+                                        color: const Color(0xFF57636C),
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -804,7 +802,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.45,
                         decoration: BoxDecoration(
@@ -812,7 +810,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               4.0, 4.0, 4.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -820,7 +818,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10.0),
@@ -833,12 +831,12 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 8.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Padding(
+                                    const Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 12.0, 0.0),
                                       child: Icon(
@@ -853,7 +851,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                           .labelSmall
                                           .override(
                                             fontFamily: 'Plus Jakarta Sans',
-                                            color: Color(0xFF57636C),
+                                            color: const Color(0xFF57636C),
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -866,7 +864,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'Dads for Gas-free Groceries',
@@ -874,7 +872,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                       .bodyLarge
                                       .override(
                                         fontFamily: 'Plus Jakarta Sans',
-                                        color: Color(0xFF14181B),
+                                        color: const Color(0xFF14181B),
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -884,7 +882,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   '352 Members',
@@ -892,7 +890,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                       .labelSmall
                                       .override(
                                         fontFamily: 'Plus Jakarta Sans',
-                                        color: Color(0xFF57636C),
+                                        color: const Color(0xFF57636C),
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,

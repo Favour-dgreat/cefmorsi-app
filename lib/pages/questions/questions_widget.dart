@@ -5,10 +5,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'questions_model.dart';
 export 'questions_model.dart';
 
@@ -66,13 +64,13 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -93,7 +91,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       2.0, 0.0, 0.0, 0.0),
                                   child: AuthUserStreamWidget(
                                     builder: (context) => Text(
@@ -128,7 +126,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: AuthUserStreamWidget(
                                 builder: (context) => InkWell(
                                   splashColor: Colors.transparent,
@@ -142,14 +140,14 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                     width: 40.0,
                                     height: 40.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl: currentUserPhoto,
                                       fit: BoxFit.cover,
                                     ),
@@ -161,17 +159,17 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                         ],
                       ),
                     ),
-                  ].addToStart(SizedBox(height: 20.0)),
+                  ].addToStart(const SizedBox(height: 20.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -180,11 +178,11 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                         options: FFButtonOptions(
                           width: 201.0,
                           height: 42.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFD4E9E8),
+                          color: const Color(0xFFD4E9E8),
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
@@ -202,7 +200,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                         ),
                       ),
                     ),
-                  ].addToStart(SizedBox(width: 30.0)),
+                  ].addToStart(const SizedBox(width: 30.0)),
                 ),
               ),
               Column(
@@ -212,14 +210,14 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 30.0),
                             child: Text(
                               'Provide your questions / prayer requests below as well as your email below so we can send you a response.',
@@ -239,18 +237,18 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 16.0, 0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 30.0),
                                   child: Material(
                                     color: Colors.transparent,
                                     elevation: 4.0,
-                                    shape: RoundedRectangleBorder(
+                                    shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
@@ -263,7 +261,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
                                           bottomRight: Radius.circular(10.0),
                                           topLeft: Radius.circular(10.0),
@@ -318,7 +316,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Color(0x00000000),
                                               width: 2.0,
                                             ),
@@ -347,7 +345,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 12.0, 16.0, 12.0),
                                           prefixIcon: Icon(
                                             Icons.email_rounded,
@@ -382,7 +380,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -395,7 +393,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -448,7 +446,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                               BorderRadius.circular(12.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -474,7 +472,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                               BorderRadius.circular(12.0),
                                         ),
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 30.0, 16.0, 12.0),
                                         prefixIcon: Icon(
                                           Icons.edit,
@@ -502,11 +500,11 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 12.0)),
+                              ].divide(const SizedBox(height: 12.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 44.0, 0.0, 12.0),
                             child: FFButtonWidget(
                               onPressed: () {
@@ -516,8 +514,8 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 48.0,
-                                padding: EdgeInsets.all(0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsets.all(0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -533,7 +531,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                                   .titleSmallFamily),
                                     ),
                                 elevation: 4.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -541,18 +539,18 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                               ),
                             ),
                           ),
-                        ].addToEnd(SizedBox(height: 180.0)),
+                        ].addToEnd(const SizedBox(height: 180.0)),
                       ),
                     ),
                   ),
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 4.0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
@@ -561,7 +559,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                     ),
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -574,13 +572,13 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                             blurRadius: 4.0,
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               2.0,
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(15.0),
                           bottomRight: Radius.circular(15.0),
                           topLeft: Radius.circular(15.0),
@@ -670,10 +668,10 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                   print('IconButton pressed ...');
                                 },
                               ),
-                            ].divide(SizedBox(width: 6.0)),
+                            ].divide(const SizedBox(width: 6.0)),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -751,7 +749,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                                                     .bodySmallFamily),
                                       ),
                                 ),
-                              ].divide(SizedBox(width: 2.0)),
+                              ].divide(const SizedBox(width: 2.0)),
                             ),
                           ),
                         ],
@@ -761,7 +759,7 @@ class _QuestionsWidgetState extends State<QuestionsWidget> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
                     bottomRight: Radius.circular(10.0),

@@ -4,10 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:provider/provider.dart';
 import 'otp_model.dart';
 export 'otp_model.dart';
 
@@ -72,7 +69,7 @@ class _OtpWidgetState extends State<OtpWidget> {
               context.safePop();
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -85,7 +82,7 @@ class _OtpWidgetState extends State<OtpWidget> {
             children: [
               Flexible(
                 child: Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Text(
                     'Please input the 4-digit recovery code\nsent to your email address/mobile\nnumber to proceed with creating an account.',
                     textAlign: TextAlign.center,
@@ -106,7 +103,7 @@ class _OtpWidgetState extends State<OtpWidget> {
                   children: [
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.all(20.0),
+                        padding: const EdgeInsets.all(20.0),
                         child: TextFormField(
                           controller: _model.textController1,
                           focusNode: _model.textFieldFocusNode1,
@@ -189,7 +186,7 @@ class _OtpWidgetState extends State<OtpWidget> {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.all(20.0),
+                        padding: const EdgeInsets.all(20.0),
                         child: TextFormField(
                           controller: _model.textController2,
                           focusNode: _model.textFieldFocusNode2,
@@ -274,7 +271,7 @@ class _OtpWidgetState extends State<OtpWidget> {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.all(20.0),
+                        padding: const EdgeInsets.all(20.0),
                         child: TextFormField(
                           controller: _model.textController3,
                           focusNode: _model.textFieldFocusNode3,
@@ -357,7 +354,7 @@ class _OtpWidgetState extends State<OtpWidget> {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsets.all(20.0),
+                        padding: const EdgeInsets.all(20.0),
                         child: TextFormField(
                           controller: _model.textController4,
                           focusNode: _model.textFieldFocusNode4,
@@ -442,10 +439,10 @@ class _OtpWidgetState extends State<OtpWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button-Login pressed ...');
@@ -455,9 +452,9 @@ class _OtpWidgetState extends State<OtpWidget> {
                       width: 300.0,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle: FlutterFlowTheme.of(context)
                           .titleSmall
@@ -470,7 +467,7 @@ class _OtpWidgetState extends State<OtpWidget> {
                                 FlutterFlowTheme.of(context).titleSmallFamily),
                           ),
                       elevation: 3.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),

@@ -1,21 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import '/backend/backend.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -80,139 +71,139 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomeWidget() : SplashWidget(),
+          appStateNotifier.loggedIn ? const HomeWidget() : const SplashWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomeWidget() : SplashWidget(),
+              appStateNotifier.loggedIn ? const HomeWidget() : const SplashWidget(),
           routes: [
             FFRoute(
               name: 'Splash',
               path: 'splash',
-              builder: (context, params) => SplashWidget(),
+              builder: (context, params) => const SplashWidget(),
             ),
             FFRoute(
               name: 'onboardingScreen',
               path: 'onboardingScreen',
-              builder: (context, params) => OnboardingScreenWidget(),
+              builder: (context, params) => const OnboardingScreenWidget(),
             ),
             FFRoute(
               name: 'Signin',
               path: 'signin',
-              builder: (context, params) => SigninWidget(),
+              builder: (context, params) => const SigninWidget(),
             ),
             FFRoute(
               name: 'ForgotPassword',
               path: 'forgotPassword',
-              builder: (context, params) => ForgotPasswordWidget(),
+              builder: (context, params) => const ForgotPasswordWidget(),
             ),
             FFRoute(
               name: 'Home',
               path: 'home',
-              builder: (context, params) => HomeWidget(),
+              builder: (context, params) => const HomeWidget(),
             ),
             FFRoute(
               name: 'SignUp',
               path: 'signUp',
-              builder: (context, params) => SignUpWidget(),
+              builder: (context, params) => const SignUpWidget(),
             ),
             FFRoute(
               name: 'OTP',
               path: 'otp',
-              builder: (context, params) => OtpWidget(),
+              builder: (context, params) => const OtpWidget(),
             ),
             FFRoute(
               name: 'OTPCopy',
               path: 'oTPCopy',
-              builder: (context, params) => OTPCopyWidget(),
+              builder: (context, params) => const OTPCopyWidget(),
             ),
             FFRoute(
               name: 'OTPCopyCopy',
               path: 'oTPCopyCopy',
-              builder: (context, params) => OTPCopyCopyWidget(),
+              builder: (context, params) => const OTPCopyCopyWidget(),
             ),
             FFRoute(
               name: 'Books',
               path: 'books',
-              builder: (context, params) => BooksWidget(),
+              builder: (context, params) => const BooksWidget(),
             ),
             FFRoute(
               name: 'BookDetails',
               path: 'bookDetails',
-              builder: (context, params) => BookDetailsWidget(),
+              builder: (context, params) => const BookDetailsWidget(),
             ),
             FFRoute(
               name: 'Videos',
               path: 'videos',
-              builder: (context, params) => VideosWidget(),
+              builder: (context, params) => const VideosWidget(),
             ),
             FFRoute(
               name: 'Magazines',
               path: 'magazines',
-              builder: (context, params) => MagazinesWidget(),
+              builder: (context, params) => const MagazinesWidget(),
             ),
             FFRoute(
               name: 'VideoDetails',
               path: 'videoDetails',
-              builder: (context, params) => VideoDetailsWidget(),
+              builder: (context, params) => const VideoDetailsWidget(),
             ),
             FFRoute(
               name: 'MagazinesDetails',
               path: 'magazinesDetails',
-              builder: (context, params) => MagazinesDetailsWidget(),
+              builder: (context, params) => const MagazinesDetailsWidget(),
             ),
             FFRoute(
               name: 'Events',
               path: 'events',
-              builder: (context, params) => EventsWidget(),
+              builder: (context, params) => const EventsWidget(),
             ),
             FFRoute(
               name: 'Websites',
               path: 'websites',
-              builder: (context, params) => WebsitesWidget(),
+              builder: (context, params) => const WebsitesWidget(),
             ),
             FFRoute(
               name: 'Questions',
               path: 'questions',
-              builder: (context, params) => QuestionsWidget(),
+              builder: (context, params) => const QuestionsWidget(),
             ),
             FFRoute(
               name: 'Donations',
               path: 'donations',
-              builder: (context, params) => DonationsWidget(),
+              builder: (context, params) => const DonationsWidget(),
             ),
             FFRoute(
               name: 'auth_2_Create',
               path: 'auth2Create',
-              builder: (context, params) => Auth2CreateWidget(),
+              builder: (context, params) => const Auth2CreateWidget(),
             ),
             FFRoute(
               name: 'auth_2_Login',
               path: 'auth2Login',
-              builder: (context, params) => Auth2LoginWidget(),
+              builder: (context, params) => const Auth2LoginWidget(),
             ),
             FFRoute(
               name: 'auth_2_ForgotPassword',
               path: 'auth2ForgotPassword',
-              builder: (context, params) => Auth2ForgotPasswordWidget(),
+              builder: (context, params) => const Auth2ForgotPasswordWidget(),
             ),
             FFRoute(
               name: 'auth_2_createProfile',
               path: 'auth2CreateProfile',
-              builder: (context, params) => Auth2CreateProfileWidget(),
+              builder: (context, params) => const Auth2CreateProfileWidget(),
             ),
             FFRoute(
               name: 'more',
               path: 'more',
               requireAuth: true,
-              builder: (context, params) => MoreWidget(),
+              builder: (context, params) => const MoreWidget(),
             ),
             FFRoute(
               name: 'auth_2_EditProfile',
               path: 'auth2EditProfile',
-              builder: (context, params) => Auth2EditProfileWidget(),
+              builder: (context, params) => const Auth2EditProfileWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -400,7 +391,7 @@ class FFRoute {
               : builder(context, ffParams);
           final child = appStateNotifier.loading
               ? Container(
-                  color: Color(0xFFE5F1F1),
+                  color: const Color(0xFFE5F1F1),
                   child: Center(
                     child: Image.asset(
                       'assets/images/cefmorsi.png',
@@ -451,7 +442,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

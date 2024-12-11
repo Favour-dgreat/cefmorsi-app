@@ -5,10 +5,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'donations_model.dart';
 export 'donations_model.dart';
 
@@ -58,13 +56,13 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -85,7 +83,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       2.0, 0.0, 0.0, 0.0),
                                   child: AuthUserStreamWidget(
                                     builder: (context) => Text(
@@ -120,7 +118,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: AuthUserStreamWidget(
                                 builder: (context) => InkWell(
                                   splashColor: Colors.transparent,
@@ -134,14 +132,14 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                     width: 40.0,
                                     height: 40.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl: currentUserPhoto,
                                       fit: BoxFit.cover,
                                     ),
@@ -153,17 +151,17 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                         ],
                       ),
                     ),
-                  ].addToStart(SizedBox(height: 20.0)),
+                  ].addToStart(const SizedBox(height: 20.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -172,11 +170,11 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                         options: FFButtonOptions(
                           width: 142.0,
                           height: 42.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFD4E9E8),
+                          color: const Color(0xFFD4E9E8),
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
@@ -194,11 +192,11 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                         ),
                       ),
                     ),
-                  ].addToStart(SizedBox(width: 30.0)),
+                  ].addToStart(const SizedBox(width: 30.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -206,7 +204,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                       child: Text(
                         'Your donations are highly welcome as this is\na free application and donations can go a\nlong way in making it better. God bless you\nas you render a hand in what we are doing\nat CEFMORSI International (It’s Missionary\nand Hospitality Charitable Causes)',
                         textAlign: TextAlign.start,
@@ -223,7 +221,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(10.0, 30.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 30.0, 0.0, 0.0),
                       child: Text(
                         'CEFMORSI Main Account Details',
                         textAlign: TextAlign.start,
@@ -244,7 +242,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -253,7 +251,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Material(
                           color: Colors.transparent,
                           elevation: 4.0,
@@ -265,7 +263,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                             height: 163.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -278,7 +276,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -286,7 +284,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                   Material(
                                     color: Colors.transparent,
                                     elevation: 4.0,
-                                    shape: RoundedRectangleBorder(
+                                    shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
@@ -301,13 +299,13 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                             blurRadius: 4.0,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            offset: Offset(
+                                            offset: const Offset(
                                               0.0,
                                               2.0,
                                             ),
                                           )
                                         ],
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
                                           bottomRight: Radius.circular(10.0),
                                           topLeft: Radius.circular(10.0),
@@ -396,14 +394,14 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                       ),
                                     ],
                                   ),
-                                ].divide(SizedBox(width: 20.0)),
+                                ].divide(const SizedBox(width: 20.0)),
                               ),
                             ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 20.0, 0.0, 2.0),
                         child: Text(
                           'CEFMORSI Alternate Account Details',
@@ -424,7 +422,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 12.0, 0.0, 20.0),
                         child: Material(
                           color: Colors.transparent,
@@ -437,7 +435,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                             height: 163.0,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -450,7 +448,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 10.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -458,7 +456,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                   Material(
                                     color: Colors.transparent,
                                     elevation: 4.0,
-                                    shape: RoundedRectangleBorder(
+                                    shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
@@ -473,13 +471,13 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                             blurRadius: 4.0,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            offset: Offset(
+                                            offset: const Offset(
                                               0.0,
                                               2.0,
                                             ),
                                           )
                                         ],
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
                                           bottomRight: Radius.circular(10.0),
                                           topLeft: Radius.circular(10.0),
@@ -568,7 +566,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                       ),
                                     ],
                                   ),
-                                ].divide(SizedBox(width: 20.0)),
+                                ].divide(const SizedBox(width: 20.0)),
                               ),
                             ),
                           ),
@@ -579,13 +577,13 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                         phone: false,
                       ))
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 30.0),
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.177,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -598,7 +596,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 0.0, 12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -608,7 +606,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                   Material(
                                     color: Colors.transparent,
                                     elevation: 4.0,
-                                    shape: RoundedRectangleBorder(
+                                    shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
@@ -623,13 +621,13 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                             blurRadius: 4.0,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            offset: Offset(
+                                            offset: const Offset(
                                               0.0,
                                               2.0,
                                             ),
                                           )
                                         ],
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
                                           bottomRight: Radius.circular(10.0),
                                           topLeft: Radius.circular(10.0),
@@ -639,7 +637,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 5.0),
                                     child: Text(
                                       'Chukie MORSI Books (Spiritual RESOURCE Platform)',
@@ -660,7 +658,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 10.0),
                                     child: Text(
                                       'https://www.chukiemorsibooks.com/',
@@ -691,7 +689,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
                     bottomRight: Radius.circular(10.0),
@@ -701,11 +699,11 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 4.0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
@@ -714,7 +712,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                     ),
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -727,13 +725,13 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                             blurRadius: 4.0,
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               2.0,
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(15.0),
                           bottomRight: Radius.circular(15.0),
                           topLeft: Radius.circular(15.0),
@@ -781,7 +779,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                   context.pushNamed(
                                     'Events',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -804,7 +802,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                   context.pushNamed(
                                     'Books',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -827,7 +825,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                   context.pushNamed(
                                     'more',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -839,7 +837,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -862,7 +860,7 @@ class _DonationsWidgetState extends State<DonationsWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Events',

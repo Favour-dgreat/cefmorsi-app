@@ -6,10 +6,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'websites_model.dart';
 export 'websites_model.dart';
 
@@ -59,7 +57,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -83,13 +81,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                       elevation: 0,
                                       insetPadding: EdgeInsets.zero,
                                       backgroundColor: Colors.transparent,
-                                      alignment: AlignmentDirectional(0.0, 0.0)
+                                      alignment: const AlignmentDirectional(0.0, 0.0)
                                           .resolve(Directionality.of(context)),
                                       child: GestureDetector(
                                         onTap: () =>
                                             FocusScope.of(dialogContext)
                                                 .unfocus(),
-                                        child: ProfileInfoWidget(),
+                                        child: const ProfileInfoWidget(),
                                       ),
                                     );
                                   },
@@ -109,7 +107,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(2.0),
+                              padding: const EdgeInsets.all(2.0),
                               child: AuthUserStreamWidget(
                                 builder: (context) => InkWell(
                                   splashColor: Colors.transparent,
@@ -123,14 +121,14 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                     width: 40.0,
                                     height: 40.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: CachedNetworkImage(
                                       fadeInDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       fadeOutDuration:
-                                          Duration(milliseconds: 500),
+                                          const Duration(milliseconds: 500),
                                       imageUrl: currentUserPhoto,
                                       fit: BoxFit.cover,
                                     ),
@@ -142,17 +140,17 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                         ],
                       ),
                     ),
-                  ].addToStart(SizedBox(height: 20.0)),
+                  ].addToStart(const SizedBox(height: 20.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 30.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -161,11 +159,11 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                         options: FFButtonOptions(
                           width: 139.0,
                           height: 42.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFFD4E9E8),
+                          color: const Color(0xFFD4E9E8),
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
@@ -183,11 +181,11 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                         ),
                       ),
                     ),
-                  ].addToStart(SizedBox(width: 20.0)),
+                  ].addToStart(const SizedBox(width: 20.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -196,7 +194,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Material(
                           color: Colors.transparent,
                           elevation: 2.0,
@@ -207,7 +205,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.177,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -220,7 +218,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -230,7 +228,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   Material(
                                     color: Colors.transparent,
                                     elevation: 4.0,
-                                    shape: RoundedRectangleBorder(
+                                    shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
@@ -245,13 +243,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                             blurRadius: 4.0,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            offset: Offset(
+                                            offset: const Offset(
                                               0.0,
                                               2.0,
                                             ),
                                           )
                                         ],
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
                                           bottomRight: Radius.circular(10.0),
                                           topLeft: Radius.circular(10.0),
@@ -261,7 +259,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 5.0),
                                     child: Text(
                                       'Cefmorsi Ministries International (Ministerial\nCOMMISION Networking Platform)',
@@ -293,7 +291,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                     clipBehavior: Clip.none,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 10.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -340,12 +338,12 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x33000000),
@@ -358,7 +356,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 0.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -368,7 +366,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -383,13 +381,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                           blurRadius: 4.0,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -399,7 +397,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 5.0),
                                   child: Text(
                                     '42nd Generation Foundation (Global OUTREACH Mission Platform)',
@@ -420,7 +418,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 10.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -460,12 +458,12 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x33000000),
@@ -478,7 +476,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 5.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -488,7 +486,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -503,13 +501,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                           blurRadius: 4.0,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -519,7 +517,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 5.0),
                                   child: Text(
                                     'Achievers FAITH Digest (Monthly TEACHING Publication Platform)',
@@ -540,7 +538,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 10.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -580,7 +578,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
@@ -588,7 +586,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 0.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -598,7 +596,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -613,13 +611,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                           blurRadius: 4.0,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -629,7 +627,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 5.0),
                                   child: Text(
                                     '42nd Generation Foundation Library (Your one-stop Believer in Christ Jesus Faith-based RESOURCE LIBRARY)',
@@ -650,7 +648,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 10.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -690,7 +688,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
@@ -698,7 +696,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 0.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -708,7 +706,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -723,13 +721,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                           blurRadius: 4.0,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -739,7 +737,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 5.0),
                                   child: Text(
                                     'Redemption Life International Church (Community CHURCHES Liaison Platform)',
@@ -760,7 +758,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 10.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -800,12 +798,12 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 5.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.177,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4.0,
                                 color: Color(0x33000000),
@@ -818,7 +816,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 0.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -828,7 +826,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                 Material(
                                   color: Colors.transparent,
                                   elevation: 4.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(10.0),
                                       bottomRight: Radius.circular(10.0),
@@ -843,13 +841,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                           blurRadius: 4.0,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -859,7 +857,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 5.0),
                                   child: Text(
                                     'CEFMORSI International (Missionary & Hospitality Charitable Causes)',
@@ -880,7 +878,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 5.0, 10.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -923,13 +921,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                         phone: false,
                       ))
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 30.0),
                           child: Container(
                             width: MediaQuery.sizeOf(context).width * 0.177,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -942,7 +940,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 0.0, 12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -952,7 +950,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   Material(
                                     color: Colors.transparent,
                                     elevation: 4.0,
-                                    shape: RoundedRectangleBorder(
+                                    shape: const RoundedRectangleBorder(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
@@ -967,13 +965,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                             blurRadius: 4.0,
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            offset: Offset(
+                                            offset: const Offset(
                                               0.0,
                                               2.0,
                                             ),
                                           )
                                         ],
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(10.0),
                                           bottomRight: Radius.circular(10.0),
                                           topLeft: Radius.circular(10.0),
@@ -983,7 +981,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 5.0),
                                     child: Text(
                                       'Chukie MORSI Books (Spiritual RESOURCE Platform)',
@@ -1004,7 +1002,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 10.0),
                                     child: Text(
                                       'https://www.chukiemorsibooks.com/',
@@ -1035,7 +1033,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(10.0),
                     bottomRight: Radius.circular(10.0),
@@ -1045,11 +1043,11 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 4.0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
@@ -1058,7 +1056,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                     ),
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(15.0),
                       bottomRight: Radius.circular(15.0),
                       topLeft: Radius.circular(15.0),
@@ -1071,13 +1069,13 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             blurRadius: 4.0,
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               2.0,
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(15.0),
                           bottomRight: Radius.circular(15.0),
                           topLeft: Radius.circular(15.0),
@@ -1125,7 +1123,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   context.pushNamed(
                                     'Events',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -1148,7 +1146,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   context.pushNamed(
                                     'Books',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.bottomToTop,
@@ -1171,7 +1169,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                   context.pushNamed(
                                     'more',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -1183,7 +1181,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1206,7 +1204,7 @@ class _WebsitesWidgetState extends State<WebsitesWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Events',

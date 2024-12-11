@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'events_card_model.dart';
 export 'events_card_model.dart';
 
@@ -40,7 +37,7 @@ class _EventsCardWidgetState extends State<EventsCardWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(10.0),
           bottomRight: Radius.circular(10.0),
@@ -49,7 +46,7 @@ class _EventsCardWidgetState extends State<EventsCardWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -115,7 +112,7 @@ class _EventsCardWidgetState extends State<EventsCardWidget> {
                     lineHeight: 2.0,
                   ),
             ),
-          ].addToStart(SizedBox(height: 20.0)),
+          ].addToStart(const SizedBox(height: 20.0)),
         ),
       ),
     );
