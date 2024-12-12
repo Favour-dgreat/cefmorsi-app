@@ -26,6 +26,8 @@ class _EscolhaPerfilEmpresaWidgetState
   void initState() {
     super.initState();
     _model = createModel(context, () => EscolhaPerfilEmpresaModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

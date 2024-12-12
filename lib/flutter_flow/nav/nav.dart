@@ -90,11 +90,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => const OnboardingScreenWidget(),
             ),
             FFRoute(
-              name: 'Signin',
-              path: 'signin',
-              builder: (context, params) => const SigninWidget(),
-            ),
-            FFRoute(
               name: 'ForgotPassword',
               path: 'forgotPassword',
               builder: (context, params) => const ForgotPasswordWidget(),
@@ -102,27 +97,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'Home',
               path: 'home',
-              builder: (context, params) => const HomeWidget(),
-            ),
-            FFRoute(
-              name: 'SignUp',
-              path: 'signUp',
-              builder: (context, params) => const SignUpWidget(),
-            ),
-            FFRoute(
-              name: 'OTP',
-              path: 'otp',
-              builder: (context, params) => const OtpWidget(),
-            ),
-            FFRoute(
-              name: 'OTPCopy',
-              path: 'oTPCopy',
-              builder: (context, params) => const OTPCopyWidget(),
-            ),
-            FFRoute(
-              name: 'OTPCopyCopy',
-              path: 'oTPCopyCopy',
-              builder: (context, params) => const OTPCopyCopyWidget(),
+              requireAuth: true,
+              builder: (context, params) => HomeWidget(
+                link: params.getParam(
+                  'link',
+                  ParamType.String,
+                ),
+              ),
             ),
             FFRoute(
               name: 'Books',
@@ -132,7 +113,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'BookDetails',
               path: 'bookDetails',
-              builder: (context, params) => const BookDetailsWidget(),
+              builder: (context, params) => BookDetailsWidget(
+                title: params.getParam(
+                  'title',
+                  ParamType.String,
+                ),
+                author: params.getParam(
+                  'author',
+                  ParamType.String,
+                ),
+                imageUrl: params.getParam(
+                  'imageUrl',
+                  ParamType.String,
+                ),
+                summary: params.getParam(
+                  'summary',
+                  ParamType.String,
+                ),
+              ),
             ),
             FFRoute(
               name: 'Videos',
@@ -152,7 +150,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'MagazinesDetails',
               path: 'magazinesDetails',
-              builder: (context, params) => const MagazinesDetailsWidget(),
+              builder: (context, params) => MagazinesDetailsWidget(
+                title: params.getParam(
+                  'title',
+                  ParamType.String,
+                ),
+                image: params.getParam(
+                  'image',
+                  ParamType.String,
+                ),
+                summary: params.getParam(
+                  'summary',
+                  ParamType.String,
+                ),
+                link: params.getParam(
+                  'link',
+                  ParamType.String,
+                ),
+              ),
             ),
             FFRoute(
               name: 'Events',
@@ -175,9 +190,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => const DonationsWidget(),
             ),
             FFRoute(
-              name: 'auth_2_Create',
-              path: 'auth2Create',
-              builder: (context, params) => const Auth2CreateWidget(),
+              name: 'SignUp',
+              path: 'signUp',
+              builder: (context, params) => const SignUpWidget(),
             ),
             FFRoute(
               name: 'auth_2_Login',
@@ -204,10 +219,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'auth_2_EditProfile',
               path: 'auth2EditProfile',
               builder: (context, params) => const Auth2EditProfileWidget(),
+            ),
+            FFRoute(
+              name: 'VideoPlay',
+              path: 'videoPlay',
+              builder: (context, params) => const VideoPlayWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
+      observers: [routeObserver],
     );
 
 extension NavParamExtensions on Map<String, String?> {

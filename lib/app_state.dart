@@ -54,6 +54,12 @@ class FFAppState extends ChangeNotifier {
     _emailaddress = value;
     prefs.setString('ff_emailaddress', value);
   }
+
+  String _currentLink = '';
+  String get currentLink => _currentLink;
+  set currentLink(String value) {
+    _currentLink = value;
+  }
 }
 
 void _safeInit(Function() initializeField) {

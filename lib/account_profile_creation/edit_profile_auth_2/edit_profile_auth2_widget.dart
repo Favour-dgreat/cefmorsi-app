@@ -49,6 +49,8 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
     _model.myBioTextController ??= TextEditingController(
         text: valueOrDefault(currentUserDocument?.shortDescription, ''));
     _model.myBioFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -96,26 +98,12 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                               fadeOutDuration: const Duration(milliseconds: 200),
                               imageUrl: valueOrDefault<String>(
                                 currentUserPhoto,
-                                'https://images.unsplash.com/photo-1499887142886-791eca5918cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxN3x8dXNlcnxlbnwwfHx8fDE2OTc4MjQ2MjZ8MA&ixlib=rb-4.0.3&q=80&w=400',
+                                'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fdownload-premium-png-of-account-png-line-icon-user-symbol-by-aew-about-profile-icon-person-icon-png-person-icon--634022453808417893%2F&psig=AOvVaw3ylvGLdubCwZJ9BaD0uaST&ust=1731519454849000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDv1pyr14kDFQAAAAAdAAAAABAJ',
                               ),
                               width: 300.0,
                               height: 200.0,
                               fit: BoxFit.cover,
                             ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(60.0),
-                          child: CachedNetworkImage(
-                            fadeInDuration: const Duration(milliseconds: 200),
-                            fadeOutDuration: const Duration(milliseconds: 200),
-                            imageUrl: _model.uploadedFileUrl,
-                            width: 300.0,
-                            height: 200.0,
-                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -395,7 +383,8 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                         style: FlutterFlowTheme.of(context).titleSmall.override(
                               fontFamily:
                                   FlutterFlowTheme.of(context).titleSmallFamily,
-                              color: FlutterFlowTheme.of(context).info,
+                              color: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
                               letterSpacing: 0.0,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context)
@@ -419,6 +408,7 @@ class _EditProfileAuth2WidgetState extends State<EditProfileAuth2Widget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).titleSmallFamily,
+                        color: FlutterFlowTheme.of(context).primaryBackground,
                         letterSpacing: 0.0,
                         useGoogleFonts: GoogleFonts.asMap().containsKey(
                             FlutterFlowTheme.of(context).titleSmallFamily),

@@ -1,9 +1,12 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'splash_model.dart';
 export 'splash_model.dart';
 
@@ -57,6 +60,8 @@ class _SplashWidgetState extends State<SplashWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -69,7 +74,10 @@ class _SplashWidgetState extends State<SplashWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
@@ -85,6 +93,37 @@ class _SplashWidgetState extends State<SplashWidget>
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Opacity(
+                    opacity: 0.0,
+                    child: FlutterFlowTimer(
+                      initialTime: _model.timerInitialTimeMs,
+                      getDisplayTime: (value) => StopWatchTimer.getDisplayTime(
+                        value,
+                        hours: false,
+                        milliSecond: false,
+                      ),
+                      controller: _model.timerController,
+                      updateStateInterval: const Duration(milliseconds: 1000),
+                      onChanged: (value, displayTime, shouldUpdate) {
+                        _model.timerMilliseconds = value;
+                        _model.timerValue = displayTime;
+                        if (shouldUpdate) safeSetState(() {});
+                      },
+                      onEnded: () async {
+                        context.pushNamed('onboardingScreen');
+                      },
+                      textAlign: TextAlign.start,
+                      style:
+                          FlutterFlowTheme.of(context).headlineSmall.override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .headlineSmallFamily,
+                                letterSpacing: 0.0,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .headlineSmallFamily),
+                              ),
+                    ),
+                  ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [

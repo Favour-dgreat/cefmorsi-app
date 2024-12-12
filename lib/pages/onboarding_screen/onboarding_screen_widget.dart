@@ -352,6 +352,8 @@ class _OnboardingScreenWidgetState extends State<OnboardingScreenWidget>
           !anim.applyInitialState),
       this,
     );
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -364,7 +366,10 @@ class _OnboardingScreenWidgetState extends State<OnboardingScreenWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: const Color(0xFFE5F1F1),
@@ -798,7 +803,7 @@ class _OnboardingScreenWidgetState extends State<OnboardingScreenWidget>
                                       0.0, 44.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('Signin');
+                                      context.pushNamed('SignUp');
                                     },
                                     text: 'Get Started',
                                     options: FFButtonOptions(

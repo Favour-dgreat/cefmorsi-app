@@ -29,6 +29,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => HeaderModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

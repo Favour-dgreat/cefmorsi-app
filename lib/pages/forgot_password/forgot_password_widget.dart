@@ -1,5 +1,4 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -27,6 +26,8 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
 
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -40,28 +41,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-      appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-        automaticallyImplyLeading: false,
-        leading: FlutterFlowIconButton(
-          borderColor: Colors.transparent,
-          borderRadius: 30.0,
-          borderWidth: 1.0,
-          buttonSize: 60.0,
-          icon: Icon(
-            Icons.arrow_circle_left,
-            color: FlutterFlowTheme.of(context).primary,
-            size: 30.0,
-          ),
-          onPressed: () async {
-            context.safePop();
-          },
-        ),
-        actions: const [],
-        centerTitle: false,
-        elevation: 0.0,
-      ),
+      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       body: Align(
         alignment: const AlignmentDirectional(0.0, -1.0),
         child: Container(
@@ -72,7 +52,8 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
           decoration: const BoxDecoration(),
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),

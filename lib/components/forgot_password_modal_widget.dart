@@ -28,6 +28,8 @@ class _ForgotPasswordModalWidgetState extends State<ForgotPasswordModalWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ForgotPasswordModalModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -25,6 +25,8 @@ class _NovaFormaPagamentoWidgetState extends State<NovaFormaPagamentoWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => NovaFormaPagamentoModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -25,6 +25,8 @@ class _EventsCardWidgetState extends State<EventsCardWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => EventsCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
